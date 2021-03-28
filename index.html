@@ -16,18 +16,23 @@
                 $("#learnMore").click(function(){
                     alert("If you keep scrolling, you can see some reviews and search for a new book!")
                     return false;
-                })
+                });
 
                 $(".category").hover(function(){
                     $(this).css("color", "black");
                     }, function(){
                     $(this).css("color", "#7d7aa2");
-                    });
+                });
 
                 $("#AboutUs").dblclick(function(){
                     alert("Please see our About Us section below!");
                     return false;
-                    });    
+                });  
+
+                $("#Submit").click(function(){
+                    alert("Thanks for your submission!");
+                    return false;
+                });  
 
                 $("#submitButton").click(function () {
                     userInput = $("#bookTitle").val();
@@ -292,7 +297,7 @@
                         <label class="form-check-label" for="inlineRadio5">5 Stars</label>
                     </div>
                     
-                    <a href="#" class="btn btn-secondary d-block mx-auto" style="width:5rem; height:2rem;">Submit</a>
+                    <a href="#" class="btn btn-secondary d-block mx-auto" id="Submit" style="width:5rem; height:2rem;">Submit</a>
                 </form>
             </div>
         </div>
